@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fffbea;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards; /* Fade in body on page load */
+}
+
+header {
+    background: #020508;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    animation: slideIn 1s forwards 0.5s; /* Slide header in with delay */
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeInLinks 1s forwards 1.5s; /* Fade in navigation links with delay */
+}
+
+nav a:hover {
+    color: #FFD700; /* Change the color to gold on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    opacity: 0;
+    animation: fadeInSection 1s forwards 2s; /* Fade in sections with delay */
+}
+
+.destination-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: inline-block;
+    width: 200px;
+    margin-right: 10px;
+    opacity: 0;
+    animation: fadeInCard 1s forwards 2.5s; /* Fade in cards with delay */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.destination-card img {
+    width: 100%;
+    height: auto;
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+form button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    opacity: 0;
+    animation: fadeInButton 1s forwards 3s; /* Fade in button with delay */
+}
+
+form button:hover {
+    background: #0056b3;
+    transform: scale(1.05); /* Enlarge button on hover */
+}
+
+/* Booking Section Styles */
+#booking {
+    background: #fffbea;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    opacity: 0;
+    animation: fadeInBooking 1s forwards 3.5s; /* Fade in booking section */
+}
+
+#booking h2 {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+#booking form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#booking form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+#booking form input, #booking form select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#booking form button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+#booking form button:hover {
+    background: #060709;
+    transform: scale(1.05); /* Enlarge button on hover */
+    animation: buttonHoverAnimation 0.3s forwards;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLinks {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSection {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInCard {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInButton {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInBooking {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes buttonHoverAnimation {
+    0% {
+        background: #007BFF;
+        transform: scale(1.05);
+    }
+    100% {
+        background: #0056b3;
+        transform: scale(1.1);
+    }
+}
+
